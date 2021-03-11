@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Buka-Buku</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  
+
+<div class="container">
+	<div class="header">
+		<h1>Buka-Buku : Situs Jual Buku, Komik, dan Novel Terpercaya!!!</h1>
+	</div> <!--/ .header -->
+	
+	<ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+			<li><a href="login.html">Login</a></li>
+        </ul>
+	
+	<div class="main">
+		<div class="left">
+			<h3>Lihat Buku Lainnya</h3>
+			<p>
+				<ul>
+					<li><a href="">Orang-orang Terbungkam karya Albert Camus</a></li>
+					<li><a href="">Misteri Karibia karya Agatha Cristie</a></li>
+					<li><a href="">Matinya Lord Edgware karya Agatha Cristie</a></li>
+					<li><a href="">Love Life </a></li>
+				</ul>
+			</p>
+		</div> <!--/ .left -->
+		
+		
+	<div class="middle">
+		
+		<form class="form-register" action="")>
+		<h3 style="text-align: center;"> Form Registrasi </h3>
+
+          <div class="box-login">
+			 <label>Nama: <input type="text" name="nama" id="nama" placeholder="Tuliskan nama lengkap anda" /></label>   
+		</div>
+
+		<div class="box-login">
+		<label>Email:</label>    
+       <input type="email" class="form-control" placeholder="Email" name="email">
+		</div>
+
+		<div class="box-login">
+		<label>Password:</label>    
+       <input type="password" class="form-controlpsw" placeholder="Enterpassword" >
+		</div>
+
+		<div class="box-login">
+		<label>Konfirmasi Password:</label>    
+       <input type="password" class="form-controlrepsw" placeholder="Enterpassword">
+	   <small class="errpsw"> </small>
+		</div>
+		<button type="submit" class="btn btn-default"> Submit </button>
+		
+		</form>
+	</div> <!--/ .main -->
+	
+	
+	
+	<div class="footer">
+		<p>Copyright 1915101003 </a></p>
+	</div> <!--/ .footer -->
+</div>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $("#form-register").submit(function() {
+
+            var ps1 = $("#psw").val();
+            var ps2 = $("#repsw").val();
+            var valid = 0;
+			
+			$('.err').html('');
+			if (ps1 == ps2) {
+			valid = 1;}
+			
+			else {
+			$('.errpsw').html('Password Tidak Sama');
+			}
+			if (valid == 0) {
+			event.preventDefault();
+			}
+			else {
+			$('p').html("Selamat pendaftaran" + $('input[name="nama"]').val() + "telah berhasil");
+			
+			('.modal').modal('show');
+					event.preventDefault();
+					}
+		});
+		});
+
+           
+</script>  -->
+</html>

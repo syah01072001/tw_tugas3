@@ -1,0 +1,138 @@
+.container{
+    max-width: 1080px;
+    margin: 20px auto;
+    background: white;
+    padding: 10px;
+}
+
+/* header */
+.header{
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin: 10px;
+	
+}
+
+
+
+/* Main dan gambar */
+    .left{
+        width: 250px;
+        border: 1px solid #d6d3d3;
+        background: #d1c0f2;
+        padding: 10px;
+        margin: 10px;
+        float: left;
+    }
+
+    .middle{
+        width: 500px;
+        border: 1px solid #d6d3d3;
+        padding: 10px;
+        margin: 10px;
+        float: left;
+    }
+        .middle img{
+            max-width: 100%;
+            height: auto;
+        }
+		
+		
+/* Halaman Login & Register */
+
+.box-login {
+    display: flex;
+    justify-content:space-between;
+    margin: 8px;
+    border-bottom: 2px solid green;
+    padding: 8px 0;
+  }
+  .box-login i {
+    font-size: 25px;
+    color:green;
+    padding: 5px 0;
+  }
+  .box-login input {
+    width: 85%;
+    padding: 5px 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: gray;
+    font-size: 18px;
+  }
+  .box-login input::placeholder {
+    color: gray;
+  }
+  
+  
+  .btn-login
+  .box-login input:hover{
+    background: rgba(10, 10, 10,s 0.5);
+  }
+  .btn-login {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background: White;
+    border: 1px solid black;
+    width: 92.5%;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 3px;
+    
+    }
+  .btn-login:hover{
+    background: rgba(12, 30, 15, 0.5);
+  }
+		
+		
+
+/* footer */
+.footer{
+    clear: both;
+    border: 2px solid #2d2d2d;
+    color: #fff;
+    background-color: #2d2d2d;
+    padding: 10px;
+    margin: 10px;
+}
+   
+/*responsive max 1080*/
+@media screen and (max-width: 1080px) {
+    
+    .container {
+        width: 100%;
+    }
+    .left {
+        width: 25%;
+        background-color: #bcec9d;
+    }
+    .middle {
+        width: 68%;
+        float: right;
+    }
+    
+    
+    
+}
+
+/*responsive max 720*/
+@media screen and (max-width: 720px) {
+    
+    .header, 
+    .footer{
+        text-align: center;
+    }
+    .left {
+        width: auto;
+        float: none;
+    }
+    
+    .middle {
+        width: auto;
+        float: none;
+    }
+    
+
+}
